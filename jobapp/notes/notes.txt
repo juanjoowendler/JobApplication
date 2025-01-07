@@ -1,0 +1,7 @@
+#1: CRUD Operations | Job Application Project | Spring Boot REST API to Microservices
+
+Maven, Spring Boot, Java 21, REST API, CRUD Operations, JSONLint, Postman
+
+#2: Spring Data JPA with H2 Database | Job App | Spring Boot REST API to Microservices
+
+Spring data JPA, H2 Database
