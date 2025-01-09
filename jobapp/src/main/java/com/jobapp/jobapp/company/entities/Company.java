@@ -1,6 +1,8 @@
 package com.jobapp.jobapp.company.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.jobapp.jobapp.job.entities.Job;
+import com.jobapp.jobapp.review.entities.Review;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,6 +22,10 @@ public class Company {
     private String name;
     private String description;
 
-    @OneToMany
+    @JsonIgnore // avoid infinite loop
+    @OneToMany(mappedBy = "company")
     private List<Job> jobs;
+
+    @OneToMany(mappedBy = "company")
+    private List<Review> reviews;
 }

@@ -2,7 +2,6 @@ package com.jobapp.jobapp.company;
 
 import com.jobapp.jobapp.company.entities.Company;
 import com.jobapp.jobapp.company.services.CompanyService;
-import org.springframework.http.HttpCookie;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
